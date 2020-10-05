@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Divanshu-portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: "Lato", sans-serif
+}
+.mySlides {
+  display: none;
+}
+.div{
+  color: red;
+
+}
+
+.fa {
+  padding:10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+  color:#E17C67;
+}
+
+.split {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.left {
+  left: 0;
+  background-color:#B6EA54;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: red;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: bold;
+
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 20s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://i.imgur.com/K3mPv14.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.imgur.com/SBEmFpv.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://i.imgur.com/emvhOnb.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://i.imgur.com/2LSMCmJ.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 10s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+
+.no-cssanimations .slideshow li {
+    opacity: 1;
+}
+
+h2{
+
+  color: #13b4d4;
+  text-shadow:hsla();
+text-decoration-style: bold;
+
+
+}
+
+.typewriter h2 {
+  color: orange;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid red; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s ;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: orange }
+  50% { border-color: orange }
+}
+
+</style>
+<body>
+<nav class="navbar fixed-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Profile</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><strong>Home</strong></a></li>
+           <li><a href="#" target="_blank">Email</a></li>
+      <li><a href="#"><strong>My Blog</strong></a></li>
+       <li><a href=""><strong>Photos</strong></a></li>
+      <li><a href="#"><strong>Contact</strong></a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" style="margin-top:50px">
+  <h3></h3>
+  <div class="row">
+    <div class="col-md-4">
+      <p></p>
+      <p></p>    
+    </div>
+    <div class="col-md-4"> 
+      <p></p>
+      <p></p>
+    </div>
+    <div class="col-md-4"> 
+      <p></p>
+      <p></p> 
+    </div>
+  </div>
+</div>
+
+<h1></h1>
+<div class="class-nav">
+<div class="container">
+        </div>
+    
+        <div id="landing-header">
+            <img src="https://lh3.googleusercontent.com/DSg56TJDJ55cZCNWO22Ubg0l4PYtZQWdjAnKzThVy6J9Ag_Vneq36auTAA87uGPSzFJVjWHjz8QYBiO-4tVQHhKZkcI97dDlwyFVDkI-xlYiqktkWfNS3JX4YH_AXn31LxECurqlqkvQMlGIDmLW0oYFowlM-j1dUga6zmbKaO8n-edouOk75OyuKJ52qWvQJXSsEN_JON2zy7jVHZjC4UkJerzrnoS4F-If4wLbID_atJmhL6p8048b4jBEmQE9zWvR4aIQnrvHAxr5WrjxaFLMAkO22DArGI_CTTc_Y2v1FvlotRvc35AjpQYckloWCPlSqmPIEzh2zUjcAEAn1Z2mEJ3PChMxKk3pyorwrFK8vEmALdl48ibvRFGRpkJNhL9GpZ-1vodTBlzwPFWV5bCftWfjrwiyi0gRHWZ_xu2gGDwV_XkRXPuGCN_rc5qyhaIfdgKweRH2ytLMji6BaKymOPpW9u3gbohgrdTbFcxeSdUf_xi-2LIyIdktxLylKtO0CR1rlAVDo3q7uPen0ysMFAtYp6NBvHMElWtAbSJ2oX4B_pMoXzYBw_G3TDkWuva4eSWR7PSuvz3APKSQ69qf809qD3e8eWpC35plXsBKF-2vPf5mucjZ_tmnTWAFS8tMTl_MaIMK0d7DNl-2Niwq_fvcyEAIuU6rA5YIF7T_nvqWwfTL0mkRpum762s=s328-no?authuser=2" align="center" width="200px" height="200px">
+            
+            <h1>Hii, I'M DIVANSHU PANDEY </h1>
+   
+          
+              <div class="typewriter">
+            <h2><strong><br> Application & website Developer<br></strong></h2>
+          </div>
+        </div>
+    
+        <ul class="slideshow">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official w3-hover-opacity fa-2x"></i></a>
+  <a href="#"><i class="fa fa-instagram w3-hover-opacity fa-2x"></i></a>
+
+  <a href="#"><i class="fa fa-whatsapp w3-hover-opacity fa-2x"></i></a>
+
+  <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity fa-2x"></i></a>
+  <a href="#"><i class="fa fa-twitter w3-hover-opacity fa-2x" ></i></a>
+
+ <a href="#"><i class="fa fa-linkedin w3-hover-opacity fa-2x"></i></a>
+ <a href="#"><i class="fa fa-github w3-hover-opacity fa-2x"></i></a>
+ <a href="#"><i class="fa fa-youtube w3-hover-opacity fa-2x"></i></a>
+ 
+</footer>
+</body>
+</html>
